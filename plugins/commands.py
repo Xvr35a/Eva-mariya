@@ -42,13 +42,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('💝 ESCOBAR EFX 💝', url=f'https://t.me/+km53--WG1h4zYzI1')
+        ], [
+            InlineKeyboardButton('✨TELEGRAM', url='https://t.me/+8VcsKBnbePExZjY1'),
+            InlineKeyboardButton('YOUTUBE✨', url='https://youtube.com/channel/UC2dDDppR7kBEmxNU4kwpznA')
+        ], [
+            InlineKeyboardButton('Editing Material', url='https://t.me/+CKFitax-Ywk0YThl'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "Click here to Join", url=invite_link.invite_link
                 )
             ]
         ]
@@ -81,20 +80,19 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Want File ? Join the channel 👇 and click try again!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('💝 ESCOBAR EFX 💝', url=f'https://t.me/+km53--WG1h4zYzI1')
+        ], [
+            InlineKeyboardButton('✨TELEGRAM', url='https://t.me/+8VcsKBnbePExZjY1'),
+            InlineKeyboardButton('YOUTUBE✨', url='https://youtube.com/channel/UC2dDDppR7kBEmxNU4kwpznA')
+        ], [
+            InlineKeyboardButton('Editing Material', url='https://t.me/+CKFitax-Ywk0YThl'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
