@@ -76,6 +76,9 @@ python3 bot.py
 </details>
 
 
+# Deploy to railway 
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/fug7NV?referralCode=0z-Pyf)
 ## Commands
 ```
 • /logs - to get the rescent errors
